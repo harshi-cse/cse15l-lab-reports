@@ -1,5 +1,9 @@
 This is the index
 
+Link to the 1st lab report:
+[Lab Report 1](http://harshi-cse.github.io/cse15l-lab-reports/lab-report-1-week-2.html)
+
+[Lab Report 1](lab-report-1-week-2.html)
 This file has now been edited on my local system.
 
 Here are examples of using markdown:
