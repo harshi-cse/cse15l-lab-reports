@@ -5,11 +5,11 @@
 
 > Go to the [VSCode website](https://code.visualstudio.com/) and download the version for your operating system by following the prompted instructions. The website should suggest the version for your system, but if not, scroll to the bottom of the web page for other versions.
 
-![Image](pic_1.png)
+![Image](pic_1.PNG)
 
 > Once VSCode has been installed on your system, you should see a window similar to the one below upon launching:
 
-![Image](pic_2.png)
+![Image](pic_2.PNG)
 
 ---
 
