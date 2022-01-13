@@ -14,7 +14,7 @@ Here are exmaples of using markdown:
   Below is an example of an image:
   ![Image](http://cdn.mos.cms.futurecdn.net/3upZx2gxxLpW7MBbnKYQLH-1200-80.jpg)
   
-  > This is an example ofa blockquote
+  > This is an example of a blockquote
   
   This is an example of a list:
     * Thing 1
