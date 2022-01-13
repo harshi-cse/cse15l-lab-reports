@@ -1,7 +1,7 @@
 # Lab Report 1 (Week 2)
 
 
-1. **Installing VSCode:**
+**1. Installing VSCode:**
 
 Go to the [VSCode website](https://code.visualstudio.com/) and download the version for your operating system by following the prompted instructions. The website should suggest the version for your system, but if not, scroll to the bottom of the web page for other versions.
 
@@ -13,7 +13,7 @@ Once VSCode has been installed on your system, you should see a window similar t
 
 ---
 
-2. **Remotely Connecting:**
+**2. Remotely Connecting:**
 
 *If your system is Windows*, follow the steps on this [website](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse) to install OpenSSH.
  
@@ -35,7 +35,7 @@ In the password prompt that appears, enter the password you set when you looked 
 
 ---
 
-3. **Trying some commands:**
+**3. Trying some commands:**
 
 Use the `pwd` command to display the path to the directory you are currently in, and use the `ls` command to list the files and directories in your current directory. 
 
@@ -55,7 +55,7 @@ Here is an example of using `ls` and `pwd` on the ieng6 server. In addition, to 
 
 ---
 
-4. **Moving files with scp:**
+**4. Moving files with scp:**
 
 Create a new file through VSCode by clicking on File -> New File in the menu as below, enter the code and text desired into the file and save it (make sure you are creating and moving the file while logged out of the ieng6 system). 
 
@@ -69,7 +69,7 @@ Here is the scp command and result of moving a sample file WhereAmI.java:
 
 ---
 
-5. **Setting an SSH Key**
+**5. Setting an SSH Key**
 
 While logged out of ieng6 enter `ssh-keygen` into your terminal, and when prompted to enter the file in which to save the key, copy paste the path provided in the parentheses and hit enter as seen below:
 
@@ -91,7 +91,7 @@ You should now be able to use ssh and scp commands from your system without havi
 
 ---
 
-6. **Optimizing Remote Running**
+**6. Optimizing Remote Running**
 
 To run commands by logging into the ieng6 server logging out automatically after, enter `ssh <your course account>@ieng6.ucsd.edu` followed by the command you desire in quotes, as seen in the first command in the image. 
 
