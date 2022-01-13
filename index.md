@@ -1,5 +1,8 @@
 This is the index
-Here are exmaples of using markdown:
+
+This file has now been edited on my local system.
+
+Here are examples of using markdown:
   *This is an example of italics*
   
   **This is an example of bold**
@@ -17,6 +20,7 @@ Here are exmaples of using markdown:
   > This is an example of a blockquote
   
   This is an example of a list:
+
     * Thing 1
     * Thing 2
     * Thing 3
@@ -28,7 +32,7 @@ Here are exmaples of using markdown:
   This is a horizontal rule:
   ---
   
-  `This is an inline code with backticks` with backticks
+  `This is an inline code with backticks` 
     
 ```
 # This is a code block
@@ -36,4 +40,3 @@ print 'Line 1'
 print 'Line 2'
 print 'Line 3'
 ```
-   
