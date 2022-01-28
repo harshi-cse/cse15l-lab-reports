@@ -117,7 +117,7 @@ When the code is run again after the changes shown above, in the terminal below,
 
 With no further changes made to the code in MarkdownParse.java from case 1, we test the file on test-file-four.md([blob](https://github.com/harshi-cse/markdown-parse/blob/main/test-file-four.md), [raw](https://raw.githubusercontent.com/harshi-cse/markdown-parse/main/test-file-four.md)). 
 
-Image](lab2_13.PNG)
+![Image](lab2_13.PNG)
 
 **Failure inducing input:**
 
