@@ -44,7 +44,7 @@ In the terminal of the image below, when the test-file-two.md file is run with M
 
 **Bug:**
 
-In order to fix our output for case 1, our code must take into account the syntax of links in markdown, which dictates that there must not be a space between the ‘]’ and ‘(‘ in the [link text](link url) link format. Currently, the code does not check for this, and simply returns the contents within the open and closed parentheses following the closed bracket, regardless of the distance between the closed bracket and the open parenthesis. 
+In order to fix our output for case 1, our code must take into account the syntax of links in markdown, which dictates that there must not be a space between the `]` and `(` in the `[<link text>](<link url>)` link format. Currently, the code does not check for this, and simply returns the contents within the open and closed parentheses following the closed bracket, regardless of the distance between the closed bracket and the open parenthesis. 
 
 *Change for case 1:*
 
@@ -79,7 +79,7 @@ With no further changes made to the code in MarkdownParse.java from case 1, we t
 
 **Failure inducing input:**
 
-As seen in the contents of test-file-three.md, line five contains a broken link, as it has square brackets followed by an open parenthesis but missing a closed one. Since our code is only supposed to print out valid links in the file, the contents within the parentheses in line three should be the only output. 
+As seen in the contents of test-file-three.md, line five contains a broken link, as it has square brackets followed by an open parenthesis but is missing a closed one. Since our code is only supposed to print out valid links in the file, the contents within the parentheses in line three should be the only output. 
 
 **Symptom:**
 
@@ -131,7 +131,7 @@ In the terminal of the image below, when the test-file-four.md file is run with 
 
 **Bug:**
 
-In order to fix our output for case 3, our code must take into account the difference between syntax of links and images in markdown. The format of links is [link text](link url), while the format of images is ![image text](image url), thus differentiated by the ‘!’ preceding the first open bracket. Currently, the code does not check for this, and simply returns the contents within the open and closed parentheses following the closed bracket, whether or not there is an exclamation mark immediately preceding the closed bracket. 
+In order to fix our output for case 3, our code must take into account the difference between syntax of links and images in markdown. The format of links is `[<link text>](<link url>)`, while the format of images is `![<image text>](<image url>)`, thus differentiated by the `!` preceding the first open bracket. Currently, the code does not check for this, and simply returns the contents within the open and closed parentheses following the closed bracket, whether or not there is an exclamation mark immediately preceding the closed bracket. 
 
 *Change for case 3:*
 
