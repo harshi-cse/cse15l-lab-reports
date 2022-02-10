@@ -45,7 +45,7 @@ To fix this ([using advice provided here](https://piazza.com/class/kxs0toocqhv4o
 \
 ![Image](lab3_8.PNG)
 \
-Now, after changing into the markdown-parse directory using `cd markdown-parse/`, when the javac command (`javac -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar MarkdownParseTest.java`) is used, the class for the test file is recompiled using the java version present on the server, and no errors occur. Then the java command (`java -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar org.junit.runner.JUnitCore MarkdownParseTest`) is used to run the test file. As seen below, all the commands and tests run successfully. \
+Now, after logging into the ieng6 server and changing into the markdown-parse directory using `cd markdown-parse/`, when the javac command (`javac -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar MarkdownParseTest.java`) is used, the class for the test file is recompiled using the java version present on the server, and no errors occur. Then the java command (`java -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar org.junit.runner.JUnitCore MarkdownParseTest`) is used to run the test file. As seen below, all the commands and tests run successfully. \
 \
 ![Image](lab3_9.PNG)
 
