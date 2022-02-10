@@ -68,7 +68,7 @@ As seen below, the directory is copied, the test file is compiled, and the test 
 \
 ![Image](lab3_12.PNG)\
 \
-Logging into the ieng6 server after this, the `ls` command can be used to verify that the server now cotains a copy of the markdown-parse directory.\
+Logging into the ieng6 server after this, the `ls` command can be used to verify that the server now contains a copy of the markdown-parse directory.\
 \
 ![Image](lab3_13.PNG)
 
