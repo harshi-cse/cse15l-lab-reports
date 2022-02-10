@@ -65,7 +65,13 @@ Now, after changing into the markdown-parse directory using `cd markdown-parse/`
  `scp -r . cs15lwi22amr@ieng6.ucsd.edu:~/markdown-parse; scp -r *.java *.md lib/ cs15lwi22amr@ieng6.ucsd.edu:markdown-parse; ssh cs15lwi22amr@ieng6.ucsd.edu "cd markdown-parse/; /software/CSE/oracle-java-se-14/jdk-14.0.2/bin/javac -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar MarkdownParseTest.java; /software/CSE/oracle-java-se-14/jdk-14.0.2/bin/java -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar org.junit.runner.JUnitCore MarkdownParseTest"`. 
 
 ![Image](lab3_11.PNG)
+
+As seen below, the directory is copied, the test file is compiled, and the test file runs successfully.
+
 ![Image](lab3_12.PNG)
+
+Logging into the ieng6 server after this, the `ls` command can be used to verify that the server now cotains a copy of the markdown-parse directory.
+
 ![Image](lab3_13.PNG)
 
 
