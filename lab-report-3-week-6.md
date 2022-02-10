@@ -54,7 +54,7 @@ Now, after logging into the ieng6 server and changing into the markdown-parse di
 
 ---
 
-5. To run copy the directory and run the tests using one line, first delete the markdown-parse directory from the ieng6 serve by using the command `rm -rf markdown-parse` while logged into the server. Using `ls` after running this command shows that markdown-parse no longer exists on the server. After doing so, log out of the server using `exit`.\
+5. To copy the directory and run the tests using one line, first delete the markdown-parse directory from the ieng6 serve by using the command `rm -rf markdown-parse` while logged into the server. Using `ls` after running this command shows that markdown-parse no longer exists on the server. After doing so, log out of the server using `exit`.\
 \
 ![Image](lab3_10.PNG)
 
