@@ -12,7 +12,7 @@
 
 *What we expect:*
 
-Using VSCode preview, we can see that snippet 1 should produce links as below:
+Using VSCode preview, we can see that snippet 1 should produce links as below (the links have also been clicked on to check urls):
 
 ![Image](lab4_1.PNG)
 
@@ -29,11 +29,27 @@ The code in the image below was added to the MarkdownParseTest.java files of the
 
 *Testing our group implementation:*
 
+The implementation of the test and the output for Snippet 1 are seen below. The implementation of the other group did not pass the test. The error occurred in line 133.
+
 ![Image](our_test1.PNG)
+
+getLinks output: 
+
+```
+[url.com, `google.com, google.com]
+```
 
 *Testing other group implementation:*
 
+The implementation of the test and the output for Snippet 1 are seen below. The implementation of the other group did not pass the test. The error occurred in line 89.
+
 ![Image](other_test1.PNG)
+
+getLinks output: 
+
+```
+[url.com, `google.com, google.com, ucsd.edu]
+```
 
 --- 
 
@@ -45,7 +61,7 @@ The code in the image below was added to the MarkdownParseTest.java files of the
 
 *What we expect:*
 
-Using VSCode preview, we can see that snippet 2 should produce links as below:
+Using VSCode preview, we can see that snippet 2 should produce links as below (the links have also been clicked on to check urls):
 
 ![Image](lab4_2.PNG)
 
@@ -62,11 +78,27 @@ The code in the image below was added to the MarkdownParseTest.java files of the
 
 *Testing our group implementation:*
 
+The implementation of the test and the output for Snippet 2 are seen below. The implementation of the other group did not pass the test. The error occurred in line 141.
+
 ![Image](our_test2.PNG)
+
+getLinks output: 
+
+```
+[a.com, a.com((]
+```
 
 *Testing other group implementation:*
 
+The implementation of the test and the output for Snippet 2 are seen below. The implementation of the other group did not pass the test. The error occurred in line 97.
+
 ![Image](other_test2.PNG)
+
+getLinks output: 
+
+```
+[a.com, a.com((, example.com]
+```
 
 ---
 
@@ -78,7 +110,7 @@ The code in the image below was added to the MarkdownParseTest.java files of the
 
 *What we expect:*
 
-Using VSCode preview, we can see that snippet 3 should produce links as below:
+Using VSCode preview, we can see that snippet 3 should produce links as below (the links have also been clicked on to check urls):
 
 ![Image](lab4_3.PNG)
 
@@ -95,13 +127,27 @@ The code in the image below was added to the MarkdownParseTest.java files of the
 
 *Testing our group implementation:*
 
-The implementation of the test and the output for Snippet 3 are seen below. Our implementation passed the test.
+The implementation of the test and the output for Snippet 3 are seen below. The implementation of our group passed the test.
 
 ![Image](our_test3.PNG)
 
+getLinks output: 
+
+```
+[https://www.twitter.com, https://ucsd-cse15l-w22.github.io/, https://cse.ucsd.edu/]
+```
+
 *Testing other group implementation:*
 
+The implementation of the test and the output for Snippet 3 are seen below. The implementation of the other group did not pass the test. The error occurred in line 106.
+
 ![Image](other_test3.PNG)
+
+getLinks output: 
+
+```
+[]
+```
 
 ---
 
