@@ -21,11 +21,15 @@ This means that our expected output from running MarkDownParse.java on a markdow
 ```
 [`google.com, google.com, ucsd.edu]
 ```
+---
+
 *Setting up the test:*
 
 The code in the image below was added to the MarkdownParseTest.java files of the two repositories containing our implementation of markdown-parse, and that of the other group.
 
 ![Image](test_1.PNG)
+
+---
 
 *Testing our group implementation:*
 
@@ -38,6 +42,7 @@ getLinks output:
 ```
 [url.com, `google.com, google.com]
 ```
+---
 
 *Testing other group implementation:*
 
@@ -70,11 +75,15 @@ This means that our expected output from running MarkDownParse.java on a markdow
 ```
 [a.com, a.com(()), example.com]
 ```
+--- 
+
 *Setting up the test:*
 
 The code in the image below was added to the MarkdownParseTest.java files of the two repositories containing our implementation of markdown-parse, and that of the other group.
 
 ![Image](test_2.PNG)
+
+---
 
 *Testing our group implementation:*
 
@@ -119,11 +128,16 @@ This means that our expected output from running MarkDownParse.java on a markdow
 ```
 [https://www.twitter.com, https://ucsd-cse15l-w22.github.io/, https://cse.ucsd.edu/]
 ```
+
+---
+
 *Setting up the test:*
 
 The code in the image below was added to the MarkdownParseTest.java files of the two repositories containing our implementation of markdown-parse, and that of the other group.
 
 ![Image](test_3.PNG)
+
+---
 
 *Testing our group implementation:*
 
@@ -136,6 +150,7 @@ getLinks output:
 ```
 [https://www.twitter.com, https://ucsd-cse15l-w22.github.io/, https://cse.ucsd.edu/]
 ```
+---
 
 *Testing other group implementation:*
 
