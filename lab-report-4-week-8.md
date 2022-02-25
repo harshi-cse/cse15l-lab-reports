@@ -33,7 +33,7 @@ The code in the image below was added to the MarkdownParseTest.java files of the
 
 *Testing our group implementation:*
 
-The implementation of the test and the output for Snippet 1 are seen below. The implementation of the other group did not pass the test. The error occurred in line 133.
+The implementation of the test and the output for Snippet 1 are seen below. The implementation of our group did not pass the test. The error occurred in line 133.
 
 ![Image](our_test1.PNG)
 
@@ -59,6 +59,8 @@ getLinks output:
 --- 
 
 *Is there a small change in our code that can fix snippet 1 / related cases with inline code with backticks?*
+
+We can fix our code with a small change by checking for the indices of backticks with respect to the brackets and parentheses. ... 
 
 ---
 
@@ -87,7 +89,7 @@ The code in the image below was added to the MarkdownParseTest.java files of the
 
 *Testing our group implementation:*
 
-The implementation of the test and the output for Snippet 2 are seen below. The implementation of the other group did not pass the test. The error occurred in line 141.
+The implementation of the test and the output for Snippet 2 are seen below. The implementation of our group did not pass the test. The error occurred in line 141.
 
 ![Image](our_test2.PNG)
 
@@ -112,6 +114,9 @@ getLinks output:
 ---
 
 *Is there a small change in our code that can fix snippet 2 / related cases with nest parentheses, brackets, and escaped brackets?*
+
+
+We can fix our code with a small change by checking for the indices of backticks with respect to the brackets and parentheses. ... 
 
 ---
 
