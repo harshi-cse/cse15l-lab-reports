@@ -53,7 +53,7 @@ getLinks output:
 
 --- 
 
-*Is there a small change in our code that can fix snippet 1 /related cases with inline code with backticks?*
+*Is there a small change in our code that can fix snippet 1 / related cases with inline code with backticks?*
 
 ---
 
@@ -102,7 +102,7 @@ getLinks output:
 
 ---
 
-*Is there a small change in our code that can fix snippet 2 /related cases with nest parentheses, brackets, and escaped brackets?*
+*Is there a small change in our code that can fix snippet 2 / related cases with nest parentheses, brackets, and escaped brackets?*
 
 ---
 
@@ -151,7 +151,7 @@ getLinks output:
 
 ---
 
-*Is there a small change in our code that can fix snippet 3 /related cases with newlines in brackets and parentheses?*
+*Is there a small change in our code that can fix snippet 3 / related cases with newlines in brackets and parentheses?*
 
 Our implementation of markdown-parse passed the test case for Snippet 3. Our code does not check for new lines in the text within closed brackets, as that should be allowed in a valid link. We do however trim new lines from the ends of links within parentheses, as seen in [line 33](https://github.com/harshi-cse/markdown-parse/blob/6e1c1d8c4222c9932a3b2a65c5a8c2791fa04d01/MarkdownParse.java#L33), while making sure to treat links with new lines within the link url itself as invalid, as seen in [line 34](https://github.com/harshi-cse/markdown-parse/blob/6e1c1d8c4222c9932a3b2a65c5a8c2791fa04d01/MarkdownParse.java#L34).
 
