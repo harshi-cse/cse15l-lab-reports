@@ -103,6 +103,8 @@ getLinks output:
 [a.com, a.com((]
 ```
 
+---
+
 *Testing other group implementation:*
 
 The implementation of the test and the output for Snippet 2 are seen below. The implementation of the other group did not pass the test. The error occurred in line 97.
