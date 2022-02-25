@@ -124,9 +124,11 @@ We cannot fix our code with a small change.
 
 If the index before the index of any identified open / closed bracket / parenthesis contains a backslash, that bracket / parenthesis should be ignored and the new index for that variable should be set as the next valid occurence of the character without a backslash. 
 
-However, it becomes challenging to check for 
+For an identified pair of brackets, we can check if there is another valid link within it. However, it will be challenging to code for which open / closed brackts and parentheses shoudl be valid pair for the link, which ones should not be, and also to check for pairs of parentheses as nested rather than simply adjacent pairs. 
 
+Since our code currently just uses the first occurence of an open bracket / parenthesis and pair it with the closest closed bracket / parenthesis, we must rewrite our code to check for pairs diffently, such as for example going out from the inner most pair (the pair of brackets / parentheses with the least space between them) and checking for more pairs outwards from there. The code must then assign valid portions of the link structure accordingly and then print the link.
 
+Coding for this is possible, but potentially not easy enough to be implemented in less than 10 lines of code.
 
 ---
 
