@@ -60,7 +60,11 @@ getLinks output:
 
 *Is there a small change in our code that can fix snippet 1 / related cases with inline code with backticks?*
 
-We can fix our code with a small change by checking for the indices of backticks with respect to the brackets and parentheses. ... 
+We can fix our code with a small change by checking for the indices of paired backticks with respect to the identified open / closed brackets and parentheses. 
+
+When it comes to the characters in a line prior to the parentheses, we can identify the indices between a pair of backticks. If the first in the pair is at any point in the line before the closed bracket and the second is at any point after that backtick in the line, we should make it so that our code does not set any values of open / closed brackets to indices between the backticks. 
+
+As for backticks paired within the parentheses, or with a pair with the first backtick within the parentheses, they do not appear to invalidate a link, so our program will work in that case as expected.
 
 ---
 
@@ -116,7 +120,13 @@ getLinks output:
 *Is there a small change in our code that can fix snippet 2 / related cases with nest parentheses, brackets, and escaped brackets?*
 
 
-We can fix our code with a small change by checking for the indices of backticks with respect to the brackets and parentheses. ... 
+We cannot fix our code with a small change. 
+
+If the index before the index of any identified open / closed bracket / parenthesis contains a backslash, that bracket / parenthesis should be ignored and the new index for that variable should be set as the next valid occurence of the character without a backslash. 
+
+However, it becomes challenging to check for 
+
+
 
 ---
 
@@ -173,6 +183,10 @@ getLinks output:
 
 *Is there a small change in our code that can fix snippet 3 / related cases with newlines in brackets and parentheses?*
 
-Our implementation of markdown-parse passed the test case for Snippet 3. Our code does not check for new lines in the text within closed brackets, as that should be allowed in a valid link. We do however trim new lines from the ends of links within parentheses, as seen in [line 33](https://github.com/harshi-cse/markdown-parse/blob/6e1c1d8c4222c9932a3b2a65c5a8c2791fa04d01/MarkdownParse.java#L33), while making sure to treat links with new lines within the link url itself as invalid, as seen in [line 34](https://github.com/harshi-cse/markdown-parse/blob/6e1c1d8c4222c9932a3b2a65c5a8c2791fa04d01/MarkdownParse.java#L34).
+Our implementation of markdown-parse passed the test case for Snippet 3. 
+
+Our code does not check for new lines in the text within closed brackets, as that should be allowed in a valid link. 
+
+We do however trim new lines from the ends of links within parentheses, as seen in [line 33](https://github.com/harshi-cse/markdown-parse/blob/6e1c1d8c4222c9932a3b2a65c5a8c2791fa04d01/MarkdownParse.java#L33), while making sure to treat links with new lines within the link url itself as invalid, as seen in [line 34](https://github.com/harshi-cse/markdown-parse/blob/6e1c1d8c4222c9932a3b2a65c5a8c2791fa04d01/MarkdownParse.java#L34).
 
 
