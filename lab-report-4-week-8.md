@@ -2,8 +2,9 @@
 
 **Important links:**
 
-- [Link to our group implementation of markdown-parse](https://github.com/harshi-cse/markdown-parse)
-- [Link to other group implementation of markdown-parse](https://github.com/CatFish47/markdown-parse)
+- [Link to our group implementation of markdown-parse on my repo](https://github.com/harshi-cse/markdown-parse)
+- [Link to other group implementation of markdown-parse on their repo](https://github.com/CatFish47/markdown-parse)
+- [Link to other group implementation of markdown-parse on my repo](https://github.com/harshi-cse/other-markdown-parse)
 
 ---
 
