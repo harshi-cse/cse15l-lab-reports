@@ -111,7 +111,7 @@ if (nextOpenBracket > 0 && markdown.charAt(nextOpenBracket - 1) == '!') {
 }
 ```
 
-Such that that code should now look like this:
+Such that the code should now look like this:
 
 ![Image](lab5_12.PNG)
 
@@ -167,6 +167,6 @@ if (openParen != nextCloseBracket + 1) {
 }
 ```
 
-Such that that code should now look like this:
+Such that the code should now look like this:
 
 ![Image](lab5_14.PNG)
