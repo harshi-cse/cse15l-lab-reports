@@ -71,7 +71,7 @@ For this output after running the `diff` command:
 
 The difference appears to be at line 1062 and 1064 of the `results.txt` files for the lab 9 and our group implementation of markdown-parse respectively.
 
-By navigating to the `results.txt` files for the lab 9 implementation, we see in the line above 1062 (1061) that the differences in output are from test file `577.md`.
+By navigating to the `results.txt` file for the lab 9 implementation, we see in the line above 1062 (1061) that the differences in output are from test file `577.md`.
 
 ![Image](lab5_6.PNG)
 
@@ -106,8 +106,8 @@ In order to do so, after [this line](https://github.com/ucsd-cse15l-w22/markdown
 
 ```
 if (nextOpenBracket > 0 && markdown.charAt(nextOpenBracket - 1) == '!') {
-                currentIndex = nextOpenBracket + 1;
-                continue;
+    currentIndex = nextOpenBracket + 1;
+    continue;
 }
 ```
 
@@ -127,7 +127,7 @@ For this output after running the `diff` command:
 
 The difference appears to be at line 916 and 918 of the `results.txt` files for the lab 9 and our group implementation of markdown-parse respectively.
 
-By navigating to the `results.txt` files for the lab 9 implementation, we see in the line above 916 (915) that the differences in output are from test file `510.md`.
+By navigating to the `results.txt` file for the lab 9 implementation, we see in the line above 916 (915) that the differences in output are from test file `510.md`.
 
 ![Image](lab5_9.PNG)
 
@@ -156,14 +156,14 @@ In our group implementation, we check for the character at the index after the c
 
 ![Image](lab5_13.PNG)
 
-Similarly, the lab 9 implementation should check the character at the index after the identified index of the closed bracket, and if it is `(`, the method should continue identifying the indices of following parentheses to add valid links to the String ArrayList that the method should return. Otherwise the method shoudl set currentIndex to the index after the closed bracket, and begin the next iteration of the while loop to search for a new potential link.
+Similarly, the lab 9 implementation should check the character at the index after the identified index of the closed bracket, and if it is `(`, the method should continue identifying the indices of following parentheses to add valid links to the String ArrayList that the method should return. Otherwise the method should set currentIndex to the index after the closed bracket, and begin the next iteration of the while loop to search for a new potential link.
 
 In order to do so, after [this line](https://github.com/ucsd-cse15l-w22/markdown-parse/blob/44a15db11dbadaa0053f1308fa4f9a6336153b31/MarkdownParse.java#L65) in the lab 9 implementation, the following code should be added:
 
 ```
 if (openParen != nextCloseBracket + 1) {
-                currentIndex = nextCloseBracket + 1;
-                continue;
+    currentIndex = nextCloseBracket + 1;
+    continue;
 }
 ```
 
