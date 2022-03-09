@@ -57,23 +57,61 @@ Thus for each line by line comparison of differences, the text following the `<`
 
 **First test difference:**
 
+For this output after running the `diff` command:
 
+![Image](lab5_5.PNG)
+
+The difference appears to be at line 1062 and 1064 of the `results.txt` files for the lab 9 and our group implementation of markdown-parse respectively.
+
+By navigating to the `results.txt` files for the lab 9 implementation, we see in the line above 1062 (1061) that the differences in output are from test file `577.md`.
+
+![Image](lab5_6.PNG)
 
 ---
 
 *Which implementation is correct:*
+
+The expected output for test file `577.md` should be `[]`, as observed when looking at the preview for the file below, as there is only an image written in the file (an exclamation mark before the open bracket). 
+
+![Image](lab5_7.PNG)
+
+The lab 9 implementation of markdown-parse outputs `[train.jpg]`, while our group implementation outputs `[]`. Therefore, our group implementation is correct, while the lab 9 implementation is wrong.
 
 ---
 
 *Describing bugs:*
 
+The bug in the lab 9 implementation of markdown-parse is that in the getLinks method called on a string, the program does not check if character before the open bracket is `!`. This is a problem because images have the same syntax as links in markdown and are only differentiated by the exclamation mark preceding the open bracket. This leads to the lab 9 implementation incorrectly interpreting images as links.
+
+In our group implemntation, we check for the character at the index before the open bracket, and if it is `!`, we increment the currentIndex variable and begin a new iteration of the while loop, [as such](https://github.com/harshi-cse/markdown-parse/blob/2ba9e75cff8c295f7daf765d5346c58bc81f23dc/MarkdownParse.java#L20):
+
+
+![Image](lab5_11.PNG)
+
+
 ---
 
 **Second test difference:**
 
+For this output after running the `diff` command:
+
+![Image](lab5_8.PNG)
+
+The difference appears to be at line 916 and 918 of the `results.txt` files for the lab 9 and our group implementation of markdown-parse respectively.
+
+By navigating to the `results.txt` files for the lab 9 implementation, we see in the line above 916 (915) that the differences in output are from test file `510.md`.
+
+![Image](lab5_9.PNG)
+
 ---
 
 *Which implementation is correct:*
+
+The expected output for test file `510.md` should be `[]`, as observed when looking at the preview for the file below, as there is a space between the closed bracket and the open parenthesis. 
+
+![Image](lab5_10.PNG)
+
+The lab 9 implementation of markdown-parse outputs `[/uri]`, while our group implementation outputs `[]`. Therefore, our group implementation is correct, while the lab 9 implementation is wrong.
 
 ---
 
