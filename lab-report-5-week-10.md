@@ -81,13 +81,26 @@ The lab 9 implementation of markdown-parse outputs `[train.jpg]`, while our grou
 
 *Describing bugs:*
 
-The bug in the lab 9 implementation of markdown-parse is that in the getLinks method called on a string, the program does not check if character before the open bracket is `!`. This is a problem because images have the same syntax as links in markdown and are only differentiated by the exclamation mark preceding the open bracket. This leads to the lab 9 implementation incorrectly interpreting images as links.
+The bug in the lab 9 implementation of markdown-parse is that in the getLinks method called on a String, the method does not check if the character before the open bracket is `!`. This is a problem because images have the same syntax as links in markdown and are only differentiated by the exclamation mark preceding the open bracket. This leads to the lab 9 implementation incorrectly interpreting images as links.
 
 In our group implemntation, we check for the character at the index before the open bracket, and if it is `!`, we increment the currentIndex variable and begin a new iteration of the while loop, [as such](https://github.com/harshi-cse/markdown-parse/blob/2ba9e75cff8c295f7daf765d5346c58bc81f23dc/MarkdownParse.java#L20):
 
 
 ![Image](lab5_11.PNG)
 
+Similarly, the lab 9 implementation should check the character at the index before the identified index of the open bracket, and if it is `!`, the method should increment currentIndex by 1, and begin the next iteration of the while loop to search for a new potential link.
+
+In order to do so, after [this line](https://github.com/ucsd-cse15l-w22/markdown-parse/blob/44a15db11dbadaa0053f1308fa4f9a6336153b31/MarkdownParse.java#L57) in the lab 9 implementation, the following code should be added:
+
+```
+if (nextOpenBracket > 0 && markdown.charAt(nextOpenBracket - 1) == '!') {
+                currentIndex = nextOpenBracket + 1;
+                continue;
+            }
+```
+Such that that code should now look like this:
+
+![Image](lab5_12.PNG)
 
 ---
 
@@ -116,3 +129,5 @@ The lab 9 implementation of markdown-parse outputs `[/uri]`, while our group imp
 ---
 
 *Describing bugs:*
+
+
